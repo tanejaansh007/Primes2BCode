@@ -30,7 +30,7 @@ def has_path(grid, n): #inputs could be (n, p) but I wanted to test hand-made gr
     return False
 
 def estimate_theta(n, p, M):
-    correctTrials = 0 #vounter for number of trials that have an occupied path
+    correctTrials = 0 #counter for number of trials that have an occupied path
 
     for _ in range(M):
 
@@ -45,7 +45,7 @@ def estimate_theta(n, p, M):
 
     return ratioCorrect
 
-if __name__ == "__main__":
+if __name__ == "__main__": #this block can be changed to test the functionality of the code - for instance, I changed it to test sample grids and verify that has_path was working.
     
     M = int(input("How many trials?\n"))
     p = float(input("Probability of any space being occupied, as a decimal:\n"))
