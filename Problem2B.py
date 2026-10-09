@@ -8,8 +8,8 @@ def grid_constructor(n, p):
 
 def has_path(grid, n): #inputs could be (n, p) but I wanted to test hand-made grids
 
-    visited = [[False] * n for _ in range(n)] #arrray of visited squares: True if visited, False if not
-    q = deque() #Queue of elements that need checking
+    visited = [[False] * n for _ in range(n)] #array of visited squares: True if visited, False if not
+    q = deque() #deque of elements that need checking
     for i in range (n):
         if grid[i][0]: #adding all initial occupied squares
             q.append((i, 0))
